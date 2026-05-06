@@ -1,6 +1,6 @@
 book: heart-aflame-for-god
 status: placeholder_schema_only
-source_policy: "Do not add real relationships until supplied by chapter notes or source review."
+source_policy: "Do not add real relationships until supplied by source notes or source review."
 
 allowed_types:
   - therefore
@@ -30,7 +30,7 @@ example:
   - id: edge-001
     type: grounds
     from: ch01-bb001
-    to: intro-cc001
+    to: intro-mt001
     label: "grounds"
     style: bold
     source_section: ch01

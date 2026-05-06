@@ -45,8 +45,8 @@ Logograph is built around these commitments:
 - **One canonical book map.** A book project has one current whole-book diagram: `book-map.drawio`.
 - **Cumulative source of truth.** `book-map.nodes.yaml` and `book-map.edges.yaml` are the structured source of truth for the whole map.
 - **Chapters as source modules.** Chapter folders are input/source material, not independent final diagrams.
-- **Cross-section linkages.** Later chapters may depend on questions from the introduction. Chapter 3 may answer tensions raised in Chapter 1. Cross-section references are a first-class feature.
-- **Semantic precision.** Questions, claims, facts, biblical basis, historical examples, assumptions, counterpoints, responses, definitions, implications, and quotes should remain distinct.
+- **Cross-section linkages.** Later chapters may depend on questions from the introduction. Chapter 3 may answer tensions raised in Chapter 1. Part 4 may revisit unresolved assumptions from Part 1. Cross-section references are a first-class feature.
+- **Semantic precision without premature rigidity.** The ontology should preserve meaningful distinctions while staying flexible as the book's structure is discovered.
 - **Authorial neutrality.** The first task is mapping, not persuasion. Represent the author's argument before evaluating whether it succeeds.
 - **Structure over extraction.** Quotations support the map, but they do not replace interpretation of the argument's structure.
 - **Progressive revelation.** The whole-book map is progressively revealed section by section, beginning with the introduction.
@@ -67,10 +67,12 @@ These must remain distinct.
 Each node type represents a different semantic category. These distinctions are important and should remain visually consistent across all books.
 
 - `question`: Explicit questions, implicit driving tensions, or unresolved problems.
-- `core_claim`: A major thesis, central doctrinal assertion, or primary answer to a question.
-- `supporting_claim`: Subordinate arguments, explanatory reasoning, or logical expansions of a core claim.
+- `meta_thesis`: The governing purpose or thesis of the whole book. Usually very few of these exist.
+- `diagnostic_claim`: Claims about what has gone wrong, such as perceived spiritual shallowness or thinness.
+- `major_claim`: Primary constructive assertions the book seeks to defend.
+- `supporting_argument`: Reasoning that supports or develops a major claim.
 - `biblical_basis`: Scripture passages, theological grounding, or explicit biblical appeals.
-- `historical_example`: Historical figures, movements, traditions, quotations, or examples used illustratively.
+- `historical_support`: Historical examples or diagnoses functioning argumentatively.
 - `quote`: A concise quotation that anchors, illustrates, or confirms part of the structure.
 - `counterpoint_against_author`: Objections, tensions, critiques, or competing explanations that press against the author's argument.
 - `counterpoint_for_author`: A counterpoint, tension, or alternative observation that ultimately strengthens or motivates the author's argument.
@@ -79,6 +81,9 @@ Each node type represents a different semantic category. These distinctions are 
 - `definition`: Clarification of terms, distinctions, or semantic precision.
 - `implication`: Practical outcomes, ministry implications, applications, or consequences flowing from claims.
 - `fact_context`: Historical context, biographical setup, stated background facts, or framing information.
+- `critique_of_existing_solutions`: Critiques of attempted answers or frameworks the author regards as insufficient or misaligned.
+
+Books contain multiple rhetorical layers. Not everything is argument. Some content functions as framing, diagnosis, persuasion, clarification, qualification, anticipation, contextualization, or caveat.
 
 ## Edge Types
 
@@ -105,10 +110,13 @@ Visual distinctions encode meaning. More detail lives in [docs/visual-grammar.md
 Suggested node colors:
 
 - Questions: blue
-- Core claims: dark green
-- Supporting claims: light green
+- Meta-theses: dark green with strongest emphasis
+- Diagnostic claims: amber or muted orange
+- Major claims: dark green
+- Supporting arguments: light green
 - Biblical basis: gold
-- Historical examples: purple
+- Historical support: purple
+- Critiques of existing solutions: orange/red
 - Counterpoints: orange/red
 - Responses: teal
 - Assumptions: grey
@@ -123,7 +131,16 @@ Suggested layout:
 - upward grounding/basis,
 - downward objections/tensions,
 - side branches for examples or elaborations,
-- visible cross-chapter links where later material depends on earlier material.
+- visible cross-section links where later material depends on earlier material.
+
+The book outline itself is semantically important and should influence eventual layout. _A Heart Aflame for God_ is organised into four major parts:
+
+1. Foundations
+2. The Reformation Triangle
+3. Widening Our Scope
+4. Challenges
+
+The eventual graph should probably not be flat. Consider section-based territories, swimlanes, or clusters. Part 2, "The Reformation Triangle," appears to be the conceptual nucleus of the whole book and should likely occupy the visual center of the eventual map.
 
 ## Quotations
 
@@ -183,8 +200,22 @@ logograph/
       chapters/
         introduction/
           notes.md
+        ch01/
+          notes.md
+        ch02/
+          notes.md
       snapshots/
         after-introduction/
+          README.md
+          book-map.drawio
+          exports/
+            README.md
+        after-ch01/
+          README.md
+          book-map.drawio
+          exports/
+            README.md
+        after-ch02/
           README.md
           book-map.drawio
           exports/

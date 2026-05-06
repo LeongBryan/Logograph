@@ -22,7 +22,7 @@ Each book workspace contains:
 2. Add new source material to `chapters/introduction/notes.md` or `chapters/chXX/notes.md`.
 3. Extract semantically precise nodes into `book-map.nodes.yaml`.
 4. Extract semantically precise edges into `book-map.edges.yaml`.
-5. Add cross-chapter references where later material depends on, answers, retrieves, or complicates earlier material.
+5. Add cross-section references where later material depends on, answers, retrieves, or complicates earlier material.
 6. Update `book-map.drawio` from the cumulative YAML.
 7. Save a snapshot under `snapshots/after-introduction/` or `snapshots/after-chXX/`.
 

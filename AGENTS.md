@@ -6,7 +6,7 @@ Logograph is a framework for visualising dense books as structured argument maps
 
 ## Core Operating Rules
 
-- Be semantically precise.
+- Be semantically precise, but do not overformalise while the book structure is still being discovered.
 - Preserve authorial neutrality. Map the author's argument before evaluating it.
 - Do not invent claims that are not present in the user's notes or supplied source material.
 - Do not summarise chapters from memory.
@@ -26,10 +26,14 @@ Logograph is a framework for visualising dense books as structured argument maps
 Do not flatten all support into one category. Preserve distinctions between:
 
 - questions
-- claims
+- meta-theses
+- diagnostic claims
+- major claims
+- supporting arguments
 - facts
 - biblical basis
-- historical examples
+- historical support
+- critiques of existing solutions
 - assumptions
 - counterpoints
 - responses
@@ -44,10 +48,12 @@ When a relationship is unclear, leave it marked as provisional rather than forci
 Use these node types unless a book-specific style guide explicitly adds a type:
 
 - `question`
-- `core_claim`
-- `supporting_claim`
+- `meta_thesis`
+- `diagnostic_claim`
+- `major_claim`
+- `supporting_argument`
 - `biblical_basis`
-- `historical_example`
+- `historical_support`
 - `quote`
 - `counterpoint_against_author`
 - `counterpoint_for_author`
@@ -56,6 +62,7 @@ Use these node types unless a book-specific style guide explicitly adds a type:
 - `definition`
 - `implication`
 - `fact_context`
+- `critique_of_existing_solutions`
 
 ## Edge Types
 
@@ -101,7 +108,7 @@ edges:
   - id: edge-001
     type: grounds
     from: ch01-bb001
-    to: intro-cc001
+    to: intro-mt001
     label: "grounds"
     style: bold
     source_section: ch01
@@ -122,6 +129,9 @@ When asked to generate diagrams:
 - Keep biblical basis visually distinct from generic support.
 - Keep facts/context visually distinct from claims.
 - Keep assumptions visually distinct from stated claims.
+- Keep diagnostic claims distinct from constructive major claims.
+- Keep critiques of existing solutions distinct from counterpoints and responses.
+- Consider section-level territories or clusters when the whole-book diagram is eventually generated.
 
 ## Arrow Style Conventions
 

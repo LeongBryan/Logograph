@@ -17,6 +17,28 @@ canonical_files:
 source_sections:
   - id: introduction
     status: "source notes folder initialised"
+  - id: ch01
+    status: "source notes folder initialised"
+  - id: ch02
+    status: "source notes folder initialised"
+parts:
+  - id: part01
+    title: "Foundations"
+    layout_role: "conceptual groundwork and definitions"
+  - id: part02
+    title: "The Reformation Triangle"
+    layout_role: "central constructive thesis/core mechanism"
+    visual_priority: "likely center"
+  - id: part03
+    title: "Widening Our Scope"
+    layout_role: "applications/extensions of the core framework"
+  - id: part04
+    title: "Challenges"
+    layout_role: "difficult cases, embodiment, suffering, weakness"
 snapshots:
   - id: after-introduction
+    status: "placeholder"
+  - id: after-ch01
+    status: "placeholder"
+  - id: after-ch02
     status: "placeholder"

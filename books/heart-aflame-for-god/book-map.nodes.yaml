@@ -1,13 +1,15 @@
 book: heart-aflame-for-god
 status: placeholder_schema_only
-source_policy: "Do not add real content until supplied by chapter notes or source review."
+source_policy: "Do not add real content until supplied by source notes or source review."
 
 allowed_types:
   - question
-  - core_claim
-  - supporting_claim
+  - meta_thesis
+  - diagnostic_claim
+  - major_claim
+  - supporting_argument
   - biblical_basis
-  - historical_example
+  - historical_support
   - quote
   - counterpoint_against_author
   - counterpoint_for_author
@@ -16,6 +18,7 @@ allowed_types:
   - definition
   - implication
   - fact_context
+  - critique_of_existing_solutions
 
 schema:
   id: "Stable node identifier, e.g. intro-q001 or ch01-q001"
