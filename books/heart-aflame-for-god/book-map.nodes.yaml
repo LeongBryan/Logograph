@@ -1,0 +1,42 @@
+book: heart-aflame-for-god
+status: placeholder_schema_only
+source_policy: "Do not add real content until supplied by chapter notes or source review."
+
+allowed_types:
+  - question
+  - core_claim
+  - supporting_claim
+  - biblical_basis
+  - historical_example
+  - quote
+  - counterpoint_against_author
+  - counterpoint_for_author
+  - response
+  - assumption
+  - definition
+  - implication
+  - fact_context
+
+schema:
+  id: "Stable node identifier, e.g. intro-q001 or ch01-q001"
+  source_section: "Source section where this node is introduced, e.g. introduction or ch01"
+  type: "One of allowed_types"
+  label: "Short diagram label"
+  summary: "Brief neutral description"
+  source:
+    kind: "notes | quote | page | external"
+    ref: "Optional source reference"
+  status: "placeholder | draft | reviewed"
+
+example:
+  - id: intro-q001
+    source_section: introduction
+    type: question
+    label: "Placeholder question"
+    summary: "Replace with a real driving question from introduction notes."
+    source:
+      kind: notes
+      ref: null
+    status: placeholder
+
+nodes: []

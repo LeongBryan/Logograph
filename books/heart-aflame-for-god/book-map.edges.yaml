@@ -1,0 +1,40 @@
+book: heart-aflame-for-god
+status: placeholder_schema_only
+source_policy: "Do not add real relationships until supplied by chapter notes or source review."
+
+allowed_types:
+  - therefore
+  - supports
+  - grounds
+  - responds_to
+  - assumes
+  - leads_to
+  - clarifies
+  - contrasts_with
+  - flows_into
+  - misunderstands
+  - retrieves
+
+schema:
+  id: "Stable edge identifier, e.g. edge-001"
+  type: "One of allowed_types"
+  from: "Source node id; may be from any source section"
+  to: "Target node id; may be from any source section"
+  label: "Visible arrow label"
+  style: "solid | dotted | bold | dashed | double"
+  source_section: "Section where this relationship is identified or introduced"
+  cross_section: "true if from/to nodes originate in different source sections"
+  status: "placeholder | draft | reviewed"
+
+example:
+  - id: edge-001
+    type: grounds
+    from: ch01-bb001
+    to: intro-cc001
+    label: "grounds"
+    style: bold
+    source_section: ch01
+    cross_section: true
+    status: placeholder
+
+edges: []

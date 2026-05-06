@@ -1,0 +1,22 @@
+title: "A Heart Aflame for God"
+subtitle: "A Reformed Approach to Spiritual Formation"
+author: "Matthew C. Bingham"
+slug: "heart-aflame-for-god"
+project_status: "initialising"
+framework: "Logograph"
+final_diagram_generated: false
+mapping:
+  neutrality: "Map the author's argument before evaluating it."
+  quote_policy: "Quotes should support the argument structure, not replace it."
+  source_of_truth: "book-map.nodes.yaml and book-map.edges.yaml define the cumulative structured argument data."
+  output_model: "One cumulative whole-book Draw.io map progressively revealed section by section, starting with the introduction."
+canonical_files:
+  diagram: "book-map.drawio"
+  nodes: "book-map.nodes.yaml"
+  edges: "book-map.edges.yaml"
+source_sections:
+  - id: introduction
+    status: "source notes folder initialised"
+snapshots:
+  - id: after-introduction
+    status: "placeholder"
